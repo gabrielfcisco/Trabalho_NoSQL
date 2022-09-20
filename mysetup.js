@@ -1,7 +1,6 @@
 let error = true
 
 let create_alunos = [
-  db.createCollection('alunos'),
   db.alunos.createIndex({ RA: 1 }, { unique: true }),
   db.alunos.createIndex({ Nome: 1 }),
   db.alunos.createIndex({ Sobrenome: 1 }),
@@ -11,10 +10,9 @@ let create_alunos = [
   db.alunos.insert({ RA: '564564654', Nome: 'João', Sobrenome:'Vasconcelos' })
 ]
 
-printjson(res)
+printjson(create_alunos);
 
 let create_professores = [
-  db.createCollection('professores'),
   db.professores.createIndex({ RP : 1 }, { unique: true }),
   db.professores.createIndex({ Nome : 1 }),
   db.professores.createIndex({ Sobrenome : 1 }),
@@ -22,12 +20,14 @@ let create_professores = [
   db.professores.insert({ RP: '13131313', Nome: 'Lula', Sobrenome:'da Silva' }),
 ]
 
-printjson(create_professores)
+printjson(create_professores);
 
 let create_materias = [
-  db.createCollection('materias'),
   db.materias.createIndex({ ID : 1 }, { unique: true }),
   db.materias.createIndex({ Nome : 1 }),
   db.materias.createIndex({ Créditos : 1 }),
   db.materias.insert({ ID: '69893826', Nome: 'DSW', Créditos:'06' }),
 ]
+
+
+printjson(create_materias);
