@@ -1,14 +1,14 @@
 let error = true
 
 let res = [
-  db.container.drop(),
-  db.container.createIndex({ myfield: 1 }, { unique: true }),
-  db.container.createIndex({ thatfield: 1 }),
-  db.container.createIndex({ thatfield: 1 }),
-  db.container.insert({ myfield: 'hello', thatfield: 'testing' }),
-  db.container.insert({ myfield: 'hello2', thatfield: 'testing' }),
-  db.container.insert({ myfield: 'hello3', thatfield: 'testing' }),
-  db.container.insert({ myfield: 'hello3', thatfield: 'testing' })
+  db.alunos.drop(),
+  db.alunos.createIndex({ RA: 1 }, { unique: true }),
+  db.alunos.createIndex({ Nome: 1 }),
+  db.alunos.createIndex({ Nome: 1 }),
+  db.alunos.insert({ myfield: '265974164', thatfield: 'Gabriel' }),
+  db.alunos.insert({ myfield: '165654646', thatfield: 'João' }),
+  db.alunos.insert({ myfield: '165465644', thatfield: 'Luís' }),
+  db.alunos.insert({ myfield: '564564654', thatfield: 'João' })
 ]
 
 printjson(res)
