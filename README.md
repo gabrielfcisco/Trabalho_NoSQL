@@ -12,9 +12,9 @@ Utilizamos uma imagem de container MongoDB e MongoExpress, o container baseado e
 Clone este repositório em sua máquina, entre na pasta e execute o comando abaixo no terminal de sua preferência:
 
 _Comando que executa o arquivo [docker-compose.yml](https://github.com/gabrielfcisco/Trabalho_NoSQL/blob/main/docker-compose.yml) para subir os containers_
-'''sh
+```sh
 docker-compose up -d
-'''
+```
 
 Pronto! Agora é só acessar seu servidor local pelo navegador:
 
