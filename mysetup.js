@@ -31,3 +31,8 @@ let create_materias = [
 
 
 printjson(create_materias);
+
+if (error) {
+  print('Error, exiting')
+  quit(1)
+}
