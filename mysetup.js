@@ -5,7 +5,7 @@ let create_alunos = [
   db.alunos.createIndex({ Nome: 1 }),
   db.alunos.createIndex({ Sobrenome: 1 }),
   db.alunos.insert({ RA: '265974164', Nome: 'Gabriel', Sobrenome:'Sousa' }),
-  db.alunos.insert({ RA: '165654646', Nome: 'João', Sobrenome:'Ferreira' }),
+  db.alunos.insert({ RA: '165654646', Nome: 'João Vitor', Sobrenome:'Ferreira dos Santos' }),
   db.alunos.insert({ RA: '165465644', Nome: 'Luís', Sobrenome:'Costa' }),
   db.alunos.insert({ RA: '564564654', Nome: 'João', Sobrenome:'Vasconcelos' })
 ]
@@ -18,7 +18,9 @@ let create_professores = [
   db.professores.createIndex({ Sobrenome : 1 }),
   db.professores.insert({ RP: '22222222', Nome: 'Jair', Sobrenome:'Bolsonaro' }),
   db.professores.insert({ RP: '13131313', Nome: 'Lula', Sobrenome:'da Silva' }),
+  db.professores.insert({ RP: '12121212', Nome: 'Ciro', Sobrenome:'Gomes' })
 ]
+
 
 printjson(create_professores);
 
@@ -27,6 +29,7 @@ let create_materias = [
   db.materias.createIndex({ Nome : 1 }),
   db.materias.createIndex({ Créditos : 1 }),
   db.materias.insert({ ID: '69893826', Nome: 'DSW', Créditos:'06' }),
+  db.materias.insert({ ID: '78945625', Nome: 'OSC', Créditos:'06' }),
 ]
 
 
