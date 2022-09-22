@@ -28,9 +28,8 @@ let create_materias = [
   db.materias.createIndex({ ID : 1 }, { unique: true }),
   db.materias.createIndex({ Nome : 1 }),
   db.materias.createIndex({ Créditos : 1 }),
-  db.materias.insert({ ID: '69893826', Nome: 'DSW', Créditos:'06' }),
-  db.materias.insert({ ID: '78945625', Nome: 'OSC', Créditos:'06' }),
-  db.materias.insert({ ID: '69893826', Nome: 'PI: Desenvolvimento de Sistemas Web', Créditos:'06' }),
+  db.materias.insert({ ID: '78945625', Nome: 'Organização de Sistemas de Computadores', Créditos:'06' }),
+  db.materias.insert({ ID: '69893826', Nome: 'PI: Desenvolvimento de Sistemas Web', Créditos:'06' })
 ]
 
 
