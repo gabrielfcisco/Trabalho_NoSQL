@@ -5,7 +5,7 @@ let create_alunos = [
   db.alunos.createIndex({ Nome: 1 }),
   db.alunos.createIndex({ Sobrenome: 1 }),
   db.alunos.insert({ RA: '265974164', Nome: 'Gabriel', Sobrenome:'Sousa' }),
-  db.alunos.insert({ RA: '165654646', Nome: 'João Vitor', Sobrenome:'Ferreira dos Santos' }),
+  db.alunos.insert({ RA: '22896419', Nome: 'João Vitor', Sobrenome:'Ferreira dos Santos' }),
   db.alunos.insert({ RA: '165465644', Nome: 'Luís', Sobrenome:'Costa' }),
   db.alunos.insert({ RA: '564564654', Nome: 'João', Sobrenome:'Vasconcelos' })
 ]
