@@ -7,7 +7,8 @@ let create_alunos = [
   db.alunos.insert({ RA: '265974164', Nome: 'Gabriel', Sobrenome:'Sousa' }),
   db.alunos.insert({ RA: '165654646', Nome: 'João', Sobrenome:'Ferreira' }),
   db.alunos.insert({ RA: '165465644', Nome: 'Luís', Sobrenome:'Costa' }),
-  db.alunos.insert({ RA: '564564654', Nome: 'João', Sobrenome:'Vasconcelos' })
+  db.alunos.insert({ RA: '564564654', Nome: 'João', Sobrenome:'Vasconcelos' }),
+  db.alunos.insert({ RA: '22013635', Nome: 'Luis', Sobrenome:'Guilherme' })
 ]
 
 printjson(create_alunos);
